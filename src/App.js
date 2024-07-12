@@ -1,6 +1,8 @@
 import './App.css';
 import React from 'react';
 import {Routes, Route } from 'react-router-dom';
+import Particles from "react-tsparticles";
+import { loadFull } from 'tsparticles';
 import Home from './containers/home';
 import About from './containers/about';
 import Resume from './containers/resume';
@@ -10,8 +12,13 @@ import Contact from './containers/contact';
 import Navbar from './components/navBar';
 
 function App() {
+  const handleInit = async(main)=>{
+    await loadFull(main)
+  }
   return (
     <div className="App">
+    {/*Particles js*/}
+    <Particles id ="particles" init ={handleInit}/>
      {/*Navbar */}
      <Navbar/>
       <Routes>
