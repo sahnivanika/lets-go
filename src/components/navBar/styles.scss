@@ -12,6 +12,7 @@
         width: 100%;
         height: inherit;
         padding: 0px 20px;
+        flex:1;
         
         &_logo{
             color: var(--yellow-theme-nav-background-color);
@@ -21,6 +22,11 @@
         display: flex;
         list-style:none;    
         text-align: center;
+        }
+        &_item{
+            line-height: 40px;
+            margin: right 1.5rem; 
+            font-size: 1.6rem;
         }
     }
 }
