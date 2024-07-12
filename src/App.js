@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './containers/home';
@@ -14,6 +14,7 @@ function App() {
     <div className="App">
         {/*Navbar */}
       <Navbar />
+      <div className="App_main-page-content">
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -22,6 +23,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+    </div>
     </div>
   );
 }
