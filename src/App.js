@@ -13,7 +13,6 @@ import Navbar from './components/navBar';
 
 function App() {
   const particlesInit = async (main) => {
-    console.log(main);
     await loadFull(main);
   };
 
@@ -23,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      {/*Particles js*/}
+      {/* Particles js */}
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -31,7 +30,7 @@ function App() {
         options={{
           background: {
             color: {
-              value: '#0d47a1',
+              value: "#0d47a1",
             },
           },
           fpsLimit: 60,
@@ -39,11 +38,11 @@ function App() {
             events: {
               onClick: {
                 enable: true,
-                mode: 'push',
+                mode: "push",
               },
               onHover: {
                 enable: true,
-                mode: 'repulse',
+                mode: "repulse",
               },
               resize: true,
             },
@@ -65,10 +64,10 @@ function App() {
           },
           particles: {
             color: {
-              value: '#ffffff',
+              value: "#ffffff",
             },
             links: {
-              color: '#ffffff',
+              color: "#ffffff",
               distance: 150,
               enable: true,
               opacity: 0.5,
@@ -78,9 +77,9 @@ function App() {
               enable: true,
             },
             move: {
-              direction: 'none',
+              direction: "none",
               enable: true,
-              outMode: 'bounce',
+              outModes: "bounce",
               random: false,
               speed: 6,
               straight: false,
@@ -96,7 +95,7 @@ function App() {
               value: 0.5,
             },
             shape: {
-              type: 'circle',
+              type: "circle",
             },
             size: {
               random: true,
@@ -106,7 +105,7 @@ function App() {
           detectRetina: true,
         }}
       />
-      {/*Navbar */}
+      {/* Navbar */}
       <Navbar />
       <Routes>
         <Route index path="/" element={<Home />} />
