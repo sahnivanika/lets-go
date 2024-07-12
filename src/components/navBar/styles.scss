@@ -55,25 +55,25 @@ body {
       list-style: none;
       text-align: center;
       margin-left: auto; /* To push the menu items to the right */
+    }
 
-      &__item {
-        line-height: 40px;
-        margin-right: 3rem; /* Increased spacing between items */
-        font-size: 2rem;
-        color: var(--yellow-theme-sub-text-color);
+    &__item {
+      line-height: 40px;
+      margin: 0 2rem; /* Increase spacing between items */
+      font-size: 2rem;
+      color: var(--yellow-theme-sub-text-color);
 
-        &::after {
-          content: '';
-          height: 3px;
-          width: 0;
-          background: transparent;
-          transition: all 0.5s ease;
-        }
+      &::after {
+        content: '';
+        height: 3px;
+        width: 0;
+        background: transparent;
+        transition: all 0.5s ease;
+      }
 
-        &:hover::after {
-          width: 100%;
-          background: var(--yellow-theme-main-color);
-        }
+      &:hover::after {
+        width: 100%;
+        background: var(--yellow-theme-main-color);
       }
     }
   }
