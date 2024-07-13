@@ -30,7 +30,7 @@ const About = () => {
     </Animate>
   </div>
     <div className="about_content_personalWrapper">
-    <div className="about_content_personalWrappe_innerContent">
+    <div className="about_content_personalWrapper_innerContent">
     <div>
         <FaDev size={60} color ="var(--yellow-theme-main-color)"/>
       </div>
