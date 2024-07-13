@@ -10,6 +10,9 @@ const Home = () => {
       Front end developer
     </h1>
     </div>
+    <div className="home_contact-me">
+      <button>Let's talk</button>
+    </div>
   </section>
   )
 };
