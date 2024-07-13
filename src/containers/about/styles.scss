@@ -1,0 +1,38 @@
+.about{
+    &_content{
+        display: flex;
+        gap:20px;
+        padding: 20px;
+        width:100%;
+        &_personalWrapper
+        {
+            width:50%;
+        }
+        &_personalWrapper
+        {
+            h3{
+                margin-top: 10px;
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: var(--yellow-theme-main-color);
+            }
+            p{
+                color: var(--yellow-theme-sub-text-color);
+                font-size: 1.8rem;
+                line-height: 1.65;
+                padding-bottom: 20px;
+                border-bottom: 1px dashed var(--yellow-theme-main-color);
+
+            }
+        }
+        &about_content_personalWrappepersonalWrapper{
+            &_innerContent{
+                width: 350px;
+                height: 350px;
+                background: radial-gradient(180,var(--yellow-theme-main-color),transparenct 90%);
+                border-radius: 50%;
+                border:1.5px solid var(--yellow-theme-main-color) ;
+            }   
+        }
+    }
+}
