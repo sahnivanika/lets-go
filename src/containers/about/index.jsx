@@ -5,7 +5,7 @@ import {BsInfoCircleFill} from 'react-icons/bs'
 import {Animate} from "react-simple-animate"
 import './styles.scss';
 import {FaDev,FaBookOpen} from 'react-icons/fa'
-import {DiBootstrap, DiBrackets,DiJavascript} from 'react-icons/di'
+import {DiBootstrap,DiJavascript} from 'react-icons/di'
 const jobSummary ="Hello!My name is Vanika Sahni and I am an undergraduate student at Thapar Institute of Engineering and Technology,Patiala,Punjab.I am pursuing my B.Tech in Electronics and Communication Engineering.I am a very hardworking individual who loves to complete her work on time.My passion for punctuality and dedication speak for itself with a record 100% attendance in school for 5 consecutive years.Besides being a tech-enthusiast and striving to horn my coding skills, my love for public speaking and debating knows no bounds. Having addressed crowds as large as 3000 people during the annual college fests, mic has always been my best buddy. I have also participated and organized multiple Model United Nations Conferences and won several Special Mentions and Best Delegate awards.I have also acquired the skill of  Search Engine Optimization(SEO) for the websites while working with a start-up.Content writing is my another area of expertise as I a work as the Head of Content at Microsoft Learn Student Chapter,TIET.Socializng and talking with different types of people is my favourite pass time.Would be glad to work with new people and learn from them.See you on the other side!"
 const About = () => {
   return (

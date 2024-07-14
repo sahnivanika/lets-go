@@ -1,59 +1,83 @@
 import React from "react";
-import PageHeaderContent from '../../components/pageHeaderContent';
-import {BsInfoCircleFill} from 'react-icons/bs'
+import PageHeaderContent from "../../components/pageHeaderContent";
+import { BsInfoCircleFill } from "react-icons/bs";
 import { Animate } from "react-simple-animate";
-import './styles.scss'
-const Contact =()=>{
-return(
-    <section id ="contact" className="contact">
-    <PageHeaderContent
-    headerText ="Contact Details"
-    icon={<BsInfoCircleFill size ={40}/>}
-    />
-    <div className="contact_content">
+import "./styles.scss";
+
+const Contact = () => {
+  return (
+    <section id="contact" className="contact">
+      <PageHeaderContent
+        headerText="My Contact"
+        icon={<BsInfoCircleFill size={40} />}
+      />
+      <div className="contact__content">
         <Animate
-        play
-        duration={1}
-        delay={0}
-        start={{
-         transform:"translateX(-200px)"   
-        }}
-        end={{
-            transform:"translateX(0px)"
-        }}
+          play
+          duration={1}
+          delay={0}
+          start={{
+            transform: "translateX(-200px)",
+          }}
+          end={{
+            transform: "translateX(0px)",
+          }}
         >
-            <h3 className="contact_content_header-text">Let's Talk</h3>
+          <h3 className="contact__content__header-text">Let's Talk</h3>
         </Animate>
         <Animate
-        play
-        duration={1}
-        delay={0}
-        start={{
-         transform:"translateX(200px)"   
-        }}
-        end={{
-            transform:"translateX(0px)"
-        }}
+          play
+          duration={1}
+          delay={0}
+          start={{
+            transform: "translateX(200px)",
+          }}
+          end={{
+            transform: "translateX(0px)",
+          }}
         >
-            <div className="contact_content_form">
-                <div className="contact_content_form_controlswrapper">
-                  <div className="nameWrapper">
-                    <input name="name" className="inputName" type={'text'}/>
-                    <label htmlFor="name" className="nameLabel">Name</label>
-                  </div>
-                  <div className="emailWrapper">
-                  <input name="email" className="inputEmail" type={'text'}/>
-                  <label htmlFor="email" className="emailLabel">Name</label>
-                  </div>
-                  <div className="descriptionWrapper">
-                  <input name="description" className="inputdescription" type={'text'}/>
-                  <label htmlFor="description" className="descriptionLabel">Name</label>
-                  </div>  
-                </div>
+          <div className="contact__content__form">
+            <div className="contact__content__form__controlswrapper">
+              <div>
+                <input
+                  required
+                  name="name"
+                  className="inputName"
+                  type={"text"}
+                />
+                <label htmlFor="name" className="nameLabel">
+                  Name
+                </label>
+              </div>
+              <div>
+                <input
+                  required
+                  name="email"
+                  className="inputEmail"
+                  type={"text"}
+                />
+                <label htmlFor="email" className="emailLabel">
+                  Email
+                </label>
+              </div>
+              <div>
+                <textarea
+                  required
+                  name="description"
+                  className="inputDescription"
+                  type={"text"}
+                  rows="5"
+                />
+                <label htmlFor="description" className="descriptionLabel">
+                  Description
+                </label>
+              </div>
             </div>
+            <button>Submit</button>
+          </div>
         </Animate>
-    </div>
+      </div>
     </section>
-)
-}
+  );
+};
 export default Contact;
