@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lets-go/static/css/main.ff5c730f.css",
+    "main.js": "/lets-go/static/js/main.7a6a0992.js",
+    "index.html": "/lets-go/index.html",
+    "main.ff5c730f.css.map": "/lets-go/static/css/main.ff5c730f.css.map",
+    "main.7a6a0992.js.map": "/lets-go/static/js/main.7a6a0992.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff5c730f.css",
+    "static/js/main.7a6a0992.js"
+  ]
+}
