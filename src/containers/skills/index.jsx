@@ -14,8 +14,8 @@ const Skills = () => {
         icon={<BsInfoCircleFill size={40} />}
       />
       <div className="skills__content-wrapper">
-        {skillsData.map((item, i) => (
-          <div key={i} className="skills__content-wrapper__inner-content">
+        {skillsData.map((item) => (
+          <div key={item.id} className="skills__content-wrapper__inner-content">
             <Animate
               play
               duration={1}
@@ -31,14 +31,15 @@ const Skills = () => {
                 {item.label}
               </h3>
               <div className="skills__content-wrapper__inner-content__progressbar-container">
-                {item.data.map((skillItem, j) => (
+                {item.data.map((skillItem) => (
                   <AnimateKeyframes
                     play
                     duration={1}
                     keyframes={["opacity : 1", "opacity : 0"]}
                     iterationCount="1"
+                    key={skillItem.id}
                   >
-                    <div className="progressbar-wrapper" key={j}>
+                    <div className="progressbar-wrapper" key={skillItem.id}>
                       <p>{skillItem.skillName}</p>
                       <Line
                         percent={skillItem.percentage}
@@ -58,4 +59,5 @@ const Skills = () => {
     </section>
   );
 };
+
 export default Skills;
